@@ -1,0 +1,8 @@
+{
+  "current_stage": "stage_1",
+  "updated_at": "'$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)'",
+  "previous_stages": [],
+  "project_started": "'$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)'",
+  "total_stages": 8,
+  "completion_percentage": 0
+}

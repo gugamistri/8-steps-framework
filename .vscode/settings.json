@@ -1,0 +1,13 @@
+{
+    "claude.contextFiles": [
+        ".claude/context/current-context.md",
+        "docs/prd/main-prd.md",
+        "docs/framework/progress-tracker.md"
+    ],
+    "claude.autoUpdateContext": true,
+    "claude.frameworkMode": true,
+    "files.associations": {
+        "*.md": "markdown"
+    },
+    "markdown.preview.breaks": true
+}

@@ -1,0 +1,143 @@
+# .framework/config/stages.yaml
+framework:
+  name: "8-Stage AI Implementation"
+  version: "1.0"
+  
+stages:
+  stage_1:
+    name: "Customer-Driven Problem Definition"
+    description: "Descoberta e validação do problema do cliente"
+    duration_weeks: 4-8
+    key_deliverables:
+      - customer_interviews_completed
+      - problem_statement_validated
+      - market_research_synthesized
+      - advisory_board_engaged
+    validation_criteria:
+      - customer_problem_quantified
+      - market_opportunity_validated
+      - competitive_analysis_completed
+      - feedback_loops_established
+    
+  stage_2:
+    name: "Technical Architecture with Customer Context"
+    description: "Arquitetura técnica orientada pelo valor do cliente"
+    duration_weeks: 4-8
+    key_deliverables:
+      - feature_to_tech_mapping
+      - enterprise_architecture_plan
+      - security_compliance_integration
+      - performance_scalability_plan
+    validation_criteria:
+      - architecture_customer_aligned
+      - production_readiness_planned
+      - security_compliance_validated
+      - engineering_product_partnership
+    
+  stage_3:
+    name: "Customer Journey Mapping and Experience Design"
+    description: "Mapeamento da jornada e design de experiência"
+    duration_weeks: 6-10
+    key_deliverables:
+      - b2b_journey_analysis
+      - experience_validation_testing
+      - user_stories_with_feedback
+      - accessibility_usability_standards
+    validation_criteria:
+      - customer_journey_optimized
+      - experience_validated_approved
+      - user_stories_feedback_integrated
+      - design_system_accessibility_compliant
+    
+  stage_4:
+    name: "Experience-Driven Design Systems"
+    description: "Sistemas de design orientados pela experiência"
+    duration_weeks: 6-10
+    key_deliverables:
+      - customer_validated_design_system
+      - ai_interaction_patterns
+      - stakeholder_experience_optimization
+      - design_consistency_scalability
+    validation_criteria:
+      - design_system_customer_validated
+      - ai_interaction_patterns_tested
+      - stakeholder_experience_approved
+      - design_scalability_consistency
+    
+  stage_5:
+    name: "Collaborative Technical Design and Architecture"
+    description: "Design técnico colaborativo e arquitetura"
+    duration_weeks: 8-12
+    key_deliverables:
+      - engineering_product_collaboration
+      - architecture_decision_records
+      - technical_feasibility_assessment
+      - non_functional_requirements
+    validation_criteria:
+      - technical_design_product_validated
+      - architecture_decisions_documented
+      - technical_feasibility_confirmed
+      - non_functional_requirements_validated
+    
+  stage_6:
+    name: "Engineering Quality Framework and Production Readiness"
+    description: "Framework de qualidade e prontidão para produção"
+    duration_weeks: 8-12
+    key_deliverables:
+      - code_review_quality_gates
+      - testing_strategies_customer_validation
+      - cicd_pipeline_deployment_automation
+      - production_monitoring_observability
+    validation_criteria:
+      - quality_framework_implemented
+      - testing_strategy_customer_scenarios
+      - cicd_pipeline_operational
+      - monitoring_observability_production
+    
+  stage_7:
+    name: "Collaborative Development and Technical Implementation"
+    description: "Desenvolvimento colaborativo e implementação técnica"
+    duration_weeks: 10-16
+    key_deliverables:
+      - engineering_driven_ai_assisted_development
+      - customer_validation_integration
+      - technical_spikes_research_protocols
+      - engineering_velocity_capacity_management
+    validation_criteria:
+      - development_customer_validation_integrated
+      - technical_quality_performance_validated
+      - customer_feedback_integrated_responsive
+      - engineering_velocity_established_optimized
+    
+  stage_8:
+    name: "Production Deployment and AI System Operations"
+    description: "Deploy em produção e operações de sistema de IA"
+    duration_weeks: 10-16
+    key_deliverables:
+      - mlops_pipelines_ai_model_deployment
+      - production_monitoring_performance_optimization
+      - customer_experience_tracking_optimization
+      - ai_system_error_handling_recovery
+    validation_criteria:
+      - production_deployment_customer_experience_validated
+      - ai_system_performance_achieved_monitored
+      - customer_satisfaction_maintained_enhanced
+      - operational_excellence_continuous_improvement
+
+# TaskMaster AI Commands Configuration
+taskmaster_commands:
+  stage_check:
+    command: "taskmaster stage-status"
+    description: "Verifica status da etapa atual"
+    
+  validate_prd:
+    command: "taskmaster validate-prd --stage=${CURRENT_STAGE}"
+    description: "Valida alinhamento com PRD"
+    
+  progress_report:
+    command: "taskmaster progress --format=markdown"
+    description: "Gera relatório de progresso"
+    
+  next_actions:
+    command: "taskmaster next-actions --prioritize"
+    description: "Lista próximas ações prioritárias"

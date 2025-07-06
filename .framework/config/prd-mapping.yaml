@@ -1,0 +1,53 @@
+prd_framework_mapping:
+  prd_sections:
+    problem_statement:
+      maps_to: [stage_1]
+      validation_required: true
+
+stage_validations:
+  stage_1:
+    prd_requirements:
+      - problem_statement_defined
+      - customer_impact_quantified
+    validation_questions:
+      - "Problema do cliente definido?"
+  stage_2:
+    prd_requirements:
+      - technical_architecture_defined
+    validation_questions:
+      - "Arquitetura técnica definida?"
+  stage_3:
+    prd_requirements:
+      - user_journeys_mapped
+    validation_questions:
+      - "Jornadas mapeadas?"
+  stage_4:
+    prd_requirements:
+      - design_system_requirements_met
+    validation_questions:
+      - "Design system completo?"
+  stage_5:
+    prd_requirements:
+      - technical_specs_documented
+    validation_questions:
+      - "Specs técnicas documentadas?"
+  stage_6:
+    prd_requirements:
+      - quality_standards_established
+    validation_questions:
+      - "Padrões de qualidade estabelecidos?"
+  stage_7:
+    prd_requirements:
+      - features_implemented_per_prd
+    validation_questions:
+      - "Features implementadas?"
+  stage_8:
+    prd_requirements:
+      - production_deployment_successful
+    validation_questions:
+      - "Deploy em produção?"
+
+compliance_flags:
+  critical: [prd_requirement_missing]
+  warning: [prd_requirement_partial]
+  info: [prd_requirement_met]
